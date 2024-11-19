@@ -1,0 +1,10 @@
+<div class="card" *ngIf="user$|async as user" style="padding:10px">
+    <p><span>id:</span> <span>{{user.id}}</span></p>
+    <p><span>name:</span> <span>{{user.name}}</span></p>
+    <p><span>username:</span> <span>{{user.username}}</span></p>
+    <p><span>email:</span> <span>{{user.email}}</span></p>
+    
+    <div mat-dialog-actions align="end">
+        <button mat-button mat-dialog-close>Cancel</button>        
+      </div>
+</div>

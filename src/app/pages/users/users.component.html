@@ -1,0 +1,12 @@
+<h1>All Users</h1>
+@if(users$ ){ 
+    <div class="cards">
+        @for(user of users$|async; track user.id){ 
+            <a (click)="openDialog(user.id)" style="cursor: pointer;" >{{user.name}}</a>
+            <br>          
+        } 
+    </div>   
+} 
+@else {
+<h2>user not found</h2>
+}
