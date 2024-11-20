@@ -1,14 +1,12 @@
 import { CommonModule, NgIf } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import {} from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { IPost } from '../../models/interface';
 import { PostsService } from '../../services/posts.service';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Inject } from '@angular/core';
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { DialogRef } from '@angular/cdk/dialog';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 
 @Component({
   selector: 'app-single-posts',

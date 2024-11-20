@@ -1,19 +1,19 @@
-import { Component, OnInit, inject } from '@angular/core';
+// import { Component, OnInit, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { IPost } from '../../models/interface';
 import { PostsService } from '../../services/posts.service';
 import { CommonModule } from '@angular/common';
-import {  HttpClientModule } from '@angular/common/http';
+import {} from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { SinglePostsComponent } from '../single-posts/single-posts.component';
+import { Component, OnInit, inject } from '@angular/core';
 
 @Component({
   selector: 'app-posts',
   standalone: true,
   imports: [
     CommonModule,
-    HttpClientModule,
     RouterModule,    
     MatDialogModule
   ],
