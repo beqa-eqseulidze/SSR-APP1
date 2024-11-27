@@ -1,8 +1,11 @@
 <main>
   <menu style="display:flex; gap:20px">
    <a [routerLink]="[ '/posts' ]" routerLinkActive="active">Posts</a>
-   <a [routerLink]="[ '/users' ]" routerLinkActive="active" >Users</a>
+   <a [routerLink]="[ '/users' ]"  routerLinkActive="active" >Users</a>
+  <a [routerLink]="['/l']" routerLinkActive="active" > Lazy</a>
+  <a [routerLink]="['/ssg']" routerLinkActive="active" >SSG</a>
   </menu>
   <br>
   <router-outlet></router-outlet>
 </main>
+

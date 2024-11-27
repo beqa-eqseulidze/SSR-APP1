@@ -1,12 +1,11 @@
 <h1>All Posts</h1>
-@if(posts$ ){ 
-    <div class="cards">
-        @for(post of posts$|async; track post.title){ 
-            <a (click)="openDialog(post.id)" style="cursor: pointer;" >{{post.title}}</a>
-            <br>          
-        } 
-    </div>   
-} 
-@else {
+@if(posts$ ){
+<div class="cards">
+  @for(post of posts$|async; track post.title){
+  <a (click)="openDialog(post.id)" style="cursor: pointer">{{ post.title }}</a>
+  <br />
+  }
+</div>
+} @else {
 <h2>posts not found</h2>
 }

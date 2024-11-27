@@ -1,6 +1,8 @@
 main{
     padding: 20px;
 }
-a.active{
-    color:blue;
+a{
+    color:black;
+    text-decoration: solid;
+    &.active{color:blue;}
 }

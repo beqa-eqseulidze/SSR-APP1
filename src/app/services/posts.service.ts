@@ -11,10 +11,10 @@ export class PostsService {
   constructor(private http:HttpClient) { }
 
  public getPosts():Observable <IPost[]>{
-  return this.http.get<IPost[]>('https://jsonplaceholder.typicode.com/posts')
+  return this.http.get<IPost[]>('http://jsonplaceholder.typicode.com/posts')
  }
 
  public getPost(id:number):Observable <IPost>{
-  return this.http.get<IPost>(`https://jsonplaceholder.typicode.com/posts/${id}`)
+  return this.http.get<IPost>(`http://jsonplaceholder.typicode.com/posts/${id}`)
  }
 }
